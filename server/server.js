@@ -28,7 +28,7 @@ var server = http.createServer(function(req, res) {
 
     if (/query/i.test(actionlist[1])) {
 
-        var productList = []
+        var productList = [];
             //查詢
         MongoClient.connect(uri, function(err, db) {
             var collection = db.collection('product');
