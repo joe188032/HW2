@@ -110,7 +110,7 @@ var server = http.createServer(function(req, res) {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
                 });
-                res.write("OK!!");
+                res.write(product.name);
                 res.end();
             })
 
@@ -145,7 +145,7 @@ var server = http.createServer(function(req, res) {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
                 });
-                res.write("OK!!");
+                res.write(product.name);
                 res.end();
             })
 
